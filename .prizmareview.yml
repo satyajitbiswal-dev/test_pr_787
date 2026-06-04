@@ -1,0 +1,25 @@
+
+
+# Health score below this = ❌ commit status fails (default: 50)
+fail_threshold: 70
+
+# Max inline comments per PR (default: 15)
+max_comments: 10
+
+# Skip entire categories
+skip_categories:
+  - SUGGESTION
+
+# Skip specific paths (supports glob patterns)
+skip_paths:
+  - "legacy/*"
+  - "mock/*"
+  - "*.generated.py"
+
+# Only review these languages (empty = review all)
+language_focus:
+  - python
+  - cpp
+
+# Review test files? (default: false)
+review_tests: false
